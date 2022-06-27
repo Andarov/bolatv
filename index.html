@@ -1,16 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Bola TV</title>
+    
     <!-- STYLES -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    
+    <!-- Header -->
+    <header class="site-header header">
+        <div class="header__container container">
+            <a class="header__logo-link" href="index.html">Bola TV</a>
+            <nav class="header__sitenav sitenav">
+                <ul class="sitenav__items">
+                    <li class="sitenav__item"><a class="sitenav__link" href="#">Bosh sahifa</a></li>
+                    <li class="sitenav__item"><a class="sitenav__link" href="#">Ertaklar</a></li>
+                    <li class="sitenav__item"><a class="sitenav__link" href="#">Multfilmlar</a></li>
+                    <li class="sitenav__item"><a class="sitenav__link" href="#">Top videolar</a></li>
+                    <li class="sitenav__item"><a class="sitenav__link" href="#">Biz haqimizda</a></li>
+                </ul>
+            </nav>
+            <a class="btn" href="#">Ro'yhatdan o'tish</a>
+        </div>
+    </header>
+    
+    <!-- Main -->
+    <main class="main-content">
+        <div class="content">
+            <div class="content__container container">
+                <h1 class="content__heading">Five litlle ducks</h1>
+                <div class="content__wrapper">
+                    
+                    <!-- Table -->
+                    <table>
+                        <thead>
+                            <tr class="thead-row">
+                                <th>Nomi</th>
+                                <th>Davomiyligi <br> (video / mp3)</th>
+                                <th>O'lchami <br> (video / mp3)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tbody-heading">Five litlle ducks</td>
+                                <td>2:32 / 2:53 </td>
+                                <td>5.84 mb / 21.2 mb</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- Media -->
+                    <div class="content__media">
+                        <!-- Video -->
+                        <p class="video-title">Five litlle ducs video</p>
+                        <video width="500" controls>
+                            <source src="media/ducks.mp4" type="video/mp4">
+                            Your browser does not support HTML video.
+                        </video>
+                        <!-- Audio -->
+                        <p class="audio-title">Five litlle ducs audio</p>
+                        <audio controls>
+                            <source src="media/ducks.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Iframe -->
+            <div class="content__youtobe youtobe">
+                <div class="youtobe__container container">
+                    <p class="youtobe__title">Youtobe orqali ko'rish</p>
+                    
+                    <div class="iframe-wrapper">
+                        <iframe width="900" height="500" src="https://www.youtube.com/embed/pZw9veQ76fo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     
 </body>
 </html>
